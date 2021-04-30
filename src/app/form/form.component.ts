@@ -43,15 +43,11 @@ export class FormComponent implements OnInit {
     // this.form.valueChanges.subscribe(console.log(this.form.value));
   }
 
-  changeTitle() {
-    this.title = 'title has been changed';
-  }
-
-  handleChange(key: string) {
+  handleChange(key: string): void {
     console.log(this.form.value[key]);
   }
 
-  change(event: any) {
+  change(event: any): void {
     console.log(event);
   }
 
