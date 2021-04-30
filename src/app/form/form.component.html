@@ -1,0 +1,39 @@
+<div class="form">
+  <form action="" [formGroup]="form">
+    <mat-form-field>
+      <input
+        type="text"
+        matInput
+        placeholder="First name"
+        formControlName="firstName"
+        (ngModelChange)="handleChange('firstName')"
+      >
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        type="text"
+        matInput
+        placeholder="Last name"
+        formControlName="lastName"
+        (ngModelChange)="handleChange('lastName')"
+      >
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field>
+      <input
+        type="email"
+        matInput
+        placeholder="Email"
+        formControlName="email"
+        (ngModelChange)="change"
+      >
+    </mat-form-field>
+    <br>
+
+    Value: {{ form.value | json }}
+
+  </form>
+</div>
